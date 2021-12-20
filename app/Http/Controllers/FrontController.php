@@ -15,26 +15,36 @@ class FrontController extends Controller
 
         $mobileResult = $agent->isMobile();
         if ($mobileResult) {
-          return view('homedesk');
+          $valor = 1;
+          return view('homedesk',compact(
+            'valor'
+          ));
         }
 
         $desktopResult= $agent->isDesktop();
         if ($desktopResult) {
-          return view('homedesk');
+          $valor = 2;
+          return view('homedesk',compact(
+            'valor'
+          ));
         }
 
         $tabletResult= $agent->isTablet();
         if ($tabletResult) {
-          return view('homedesk');
+          $valor = 3;
+          return view('homedesk',compact(
+            'valor'
+          ));
         }
 
         $tabletResult= $agent->isPhone();
         if ($tabletResult) {
-          return view('homedesk');
+          $valor = 4;
+          return view('homedesk',compact(
+            'valor'
+          ));
         }
 
-
-        dd($result);
     }
 
 
