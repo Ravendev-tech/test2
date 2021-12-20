@@ -607,7 +607,7 @@
 										<a href="about-style-one.html">Featured</a>
 										<div class="sub-menu custom-content">
 											<div class="video-container">
-												<iframe src="https://player.vimeo.com/video/213961896?title=0&mp;byline=0&amp;portrait=0&amp;color=717dfb" width="500" height="281"></iframe>
+												<!-- <iframe src="https://player.vimeo.com/video/213961896?title=0&mp;byline=0&amp;portrait=0&amp;color=717dfb" width="500" height="281"></iframe> -->
 											</div>
 											<ul>
 												<li>
