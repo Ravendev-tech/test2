@@ -13,8 +13,5 @@ use App\Http\Controllers\FrontController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('detect-device', [FrontController::class, 'detuctDebice'])->name('detect-device');
+Route::get('/', [FrontController::class, 'detuctDebice'])->name('detect-device');

@@ -15,29 +15,29 @@ class FrontController extends Controller
 
         $mobileResult = $agent->isMobile();
         if ($mobileResult) {
-          $result = 'Yes, This is Mobile.';
+          return view('homemovile');
         }
 
         $desktopResult= $agent->isDesktop();
         if ($desktopResult) {
-          $result = 'Yes, This is Desktop.';
+          return view('homedesk');
         }
 
         $tabletResult= $agent->isTablet();
         if ($tabletResult) {
-          $result = 'Yes, This is Desktop.';
+          return view('homemovile');
         }
 
         $tabletResult= $agent->isPhone();
         if ($tabletResult) {
-          $result = 'Yes, This is Phone.';
+          return view('homemovile');
         }
 
 
         dd($result);
     }
 
-  
+
     /**
      * Display a listing of the resource.
      *

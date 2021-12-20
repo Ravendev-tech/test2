@@ -10,12 +10,7 @@
 	<title>Faulkner | Multipurpose HTML5 Template - Mobile Application</title>
 	<link rel="shortcut icon" type="image/x-icon" href="images/theme-mountain-favicon.ico">
 
-	<!-- Font -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CHind+Madurai:400,500&amp;subset=latin-ext" rel="stylesheet">
 
-	<!-- Css -->
-	<link rel="stylesheet" href="css/core.min.css" />
-	<link rel="stylesheet" href="css/skin.css" />
 
 	<!--[if lt IE 9]>
     	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -1173,144 +1168,14 @@
 				</div>
 				<!-- Logo Section 3 End -->
 
-				<!-- Article Section -->
-				<div id="documentation" class="section-block replicable-content bkg-grey-ultralight">
-					<div class="row flex">
-						<div class="column width-6 v-align-middle">
-							<div>
-								<h2 class="mb-30">Extensive Documentation</h2>
-								<p class="lead mb-60">We've made sure carefully document every aspect of the Faulkner APIs. Below are a few topics to help you get started.</p>
-							</div>
-						</div>
-						<div class="column width-6 right left-on-mobile v-align-bottom">
-							<div>
-								<a class="button rounded small bkg-pink bkg-hover-white color-white color-hover-pink mb-60">View All Articles</a>
-							</div>
-						</div>
-					</div>
-					<div class="row flex boxes two-columns-on-tablet">
-						<div class="column width-3">
-							<div class="box large rounded bkg-white horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:0ms;">
-								<h4 class="mb-80 mb-mobile-40">The Fundamentals of Faulkner</h4>
-								<p><a href="#">View article &rarr;</a></p>
-							</div>
-						</div>
-						<div class="column width-3">
-							<div class="box large rounded bkg-white horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:150ms;">
-								<h4 class="mb-80 mb-mobile-40">A Simple Way to Integrate</h4>
-								<p><a href="#">View article &rarr;</a></p>
-							</div>
-						</div>
-						<div class="column width-3">
-							<div class="box large rounded bkg-white horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:300ms;">
-								<h4 class="mb-80 mb-mobile-40">Authorization using the OAuth 2.0 protocol</h4>
-								<p><a href="#">View article &rarr;</a></p>
-							</div>
-						</div>
-						<div class="column width-3">
-							<div class="box large rounded bkg-white horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:450ms;">
-								<h4 class="mb-80 mb-mobile-40">Intro to Platform-as-a-service (PaaS)</h4>
-								<p><a href="#">View article &rarr;</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
 				<!-- Article Section End -->
 
 				<!-- API Example Section -->
-				<div class="section-block bkg-ash">
-					<div class="row flex">
-						<div class="column width-6 v-align-middle">
-							<div>
-								<h2 class="mb-40 color-white">Example Integration</h2>
-								<p class="mb-mobile-40 color-white">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-								<ul class="list-unstyled color-white">
-									<li><span class="icon-check"></span> Simple integration</li>
-									<li><span class="icon-check"></span> 50+ ready-to-use APIs</li>
-									<li><span class="icon-check"></span> Free support</li>
-								</ul>
-								<a class="button rounded small bkg-pink bkg-hover-white color-white color-hover-pink mb-60">Get Help with Implementation</a>
-							</div>
-						</div>
-						<div class="column width-6">
-							<div class="box js-fiddle rounded xlarge bkg-white shadow horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:150ms;">
-								<iframe height="300" src="https://jsfiddle.net/ThemeMountain/p3gkkmka/13/embedded/js/?bodyColor=fff&menuColor=f5f7f9&fontColor=666&accentColor=f44c67"></iframe>
-							</div>
-						</div>
-					</div>
-				</div>
 				<!-- API Example Section End -->
 
 				<!-- Pricing Options -->
-				<div class="section-block bkg-white">
-					<div class="row flex boxes one-column-on-tablet">
-						<div class="column width-5 v-align-middle">
-							<div class="box rounded xlarge bkg-pink color-white">
-								<div>
-									<h2 class="mb-40">Affordable Prices for Small Businesses.</h2>
-									<p class="mb-mobile-40">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-								</div>
-							</div>
-						</div>
-						<div class="column width-7">
-							<div class="box rounded">
-								<div class="pricing-table rounded xlarge style-2 columns-2 mb-0 border-white">
-									<div class="pricing-table-column">
-										<div class="pricing-table-header">
-											<h2 class="weight-semi-bold">Discovery</h2>
-										</div>
-										<div class="pricing-table-price">
-											<h4>
-												<span class="currency">$</span>1.95
-												<span class="interval mt-10">/per month</span>
-											</h4>
-											<hr>
-										</div>
-										<div class="pricing-table-text">
-											<p>For startups with less than 5 applications per month. Upgrade to Pinoneer at any time.</p>
-										</div>
-										<div class="pricing-table-footer">
-											<a href="#" class="button rounded border-pink bkg-hover-pink color-pink color-hover-white shadow-hover mb-mobile-40">Select Option</a>
-										</div>
-									</div>
-									<div class="pricing-table-column">
-										<div class="pricing-table-header">
-											<h2 class="weight-semi-bold">Pioneer</h2>
-										</div>
-										<div class="pricing-table-price">
-											<h4>
-												<span class="currency">$</span>3.95
-												<span class="interval mt-10">/per month</span>
-											</h4>
-											<hr>
-										</div>
-										<div class="pricing-table-text">
-											<p>For growing mid-size to large companies with 100+ applications per month.</p>
-										</div>
-										<div class="pricing-table-footer">
-											<a href="#" class="button rounded border-pink bkg-hover-pink color-pink color-hover-white shadow-hover mb-mobile-40">Select Option</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 				<!-- Pricing Options End -->
 
-				<!-- Custom Call to Action Section -->
-				<div class="section-block pt-60 pb-60 bkg-ash">
-					<div class="row flex">
-						<div class="column width-8 left v-align-middle horizon" data-animate-in="preset:slideInLeftShort;duration:1000ms;delay:0;" data-threshold="1">
-							<p class="lead mb-mobile-20 color-white">Enhance your application by using Faulkner's API and web tools today!</p>
-						</div>
-						<div class="column width-4 right v-align-middle horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;delay:300;" data-threshold="1">
-							<div>
-								<a href="https://player.vimeo.com/video/118640180?autoplay=1" class="button rounded medium border-white color-white bkg-hover-white color-hover-pink no-margins lightbox-link">Create an Account</a>
-							</div>
-						</div>
-					</div>
-				</div>
 				<!-- Custom Call to Action Section End -->
 
 			</div>
@@ -1369,7 +1234,12 @@
 
 		</div>
 	</div>
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CHind+Madurai:400,500&amp;subset=latin-ext" rel="stylesheet">
 
+	<!-- Css -->
+	<link rel="stylesheet" href="css/core.min.css" />
+	<link rel="stylesheet" href="css/skin.css" />
 	<!-- Js -->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3JCAhNj6tVAO_LSb8M-AzMlidiT-RPAs"></script>
