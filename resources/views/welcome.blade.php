@@ -1,132 +1,1386 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8" />
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
 
-        <title>Laravel</title>
+	<!-- Open Graph -->
+	<meta property="og:title" content="Your Page Title Here" />
+	<meta property="og:url" content="http://dev.thememountain.com/faulkner/project-style-one.html" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="http://dev.thememountain.com/faulkner/images/portfolio/projects/project-1-1.jpg" />
+	<meta property="og:description" content="Your Page Description Here" />
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+	<!-- Twitter Theme -->
+	<meta name="twitter:widgets:theme" content="light">
 
-        <!-- Styles -->
-        <style>
-            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.dark\:text-gray-500{--tw-text-opacity:1;color:#6b7280;color:rgba(107,114,128,var(--tw-text-opacity))}}
-        </style>
+	<!-- Title &amp; Favicon -->
+	<title>Faulkner | Multipurpose HTML5 Template - Mobile Application</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/theme-mountain-favicon.ico">
 
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
-    </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CHind+Madurai:400,500&amp;subset=latin-ext" rel="stylesheet">
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+	<!-- Css -->
+	<link rel="stylesheet" href="css/core.min.css" />
+	<link rel="stylesheet" href="css/skin.css" />
 
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
-                        <g clip-path="url(#clip0)" fill="#EF3B2D">
-                            <path d="M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"/>
-                        </g>
-                    </svg>
-                </div>
+	<!--[if lt IE 9]>
+    	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="p-6">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
-                            </div>
+</head>
+<body class="shop home-page">
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
-                                </div>
-                            </div>
-                        </div>
+	<!-- Side Navigation Menu -->
+	<aside class="side-navigation-wrapper enter-right" data-no-scrollbar data-animation="push-in">
+		<div class="side-navigation-scroll-pane">
+			<div class="side-navigation-inner">
+				<div class="side-navigation-header">
+					<div class="navigation-hide side-nav-hide">
+						<a href="#">
+							<span class="icon-cancel medium"></span>
+						</a>
+					</div>
+				</div>
+				<nav class="side-navigation nav-block">
+					<ul>
+						<li class="current">
+							<a href="#" class="contains-sub-menu">Demos</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="homepage-consulting.html">Consulting</a>
+								</li>
+								<li>
+									<a href="homepage-crowdfunding.html">Crowdfunding <span class="label rounded bkg-theme color-white pull-right">New</span></a>
+								</li>
+								<li>
+									<a href="homepage-hosting.html">Hosting <span class="label rounded bkg-theme color-white pull-right">New</span></a>
+								</li>
+								<li>
+									<a href="homepage-ico.html">Initial Coin Offering <span class="label rounded bkg-theme color-white pull-right">New</span></a>
+								</li>
+								<li>
+									<a href="homepage-mobile-application.html">Mobile Application</a>
+								</li>
+								<li>
+									<a href="homepage-mobile-application-2.html">Mobile Application 2</a>
+								</li>
+								<li>
+									<a href="homepage-mobile-application-3.html">Mobile Application 3 <span class="label rounded bkg-theme color-white pull-right">New</span></a>
+								</li>
+								<li>
+									<a href="homepage-platform.html">Web Platform</a>
+								</li>
+								<li>
+									<a href="homepage-platform-2.html">Web Platform 2</a>
+								</li>
+								<li>
+									<a href="homepage-product.html">Product</a>
+								</li>
+								<li>
+									<a href="homepage-service.html">Service</a>
+								</li>
+								<li>
+									<a href="homepage-service-2.html">Service 2</a>
+								</li>
+								<li>
+									<a href="homepage-store.html">Store</a>
+								</li>
+								<li>
+									<a href="homepage-web-application.html">Web Application</a>
+								</li>
+								<li class="current">
+									<a href="homepage-web-application-2.html">Web Application 2</a>
+								</li>
+								<li>
+									<a href="homepage-web-application-3.html">Web Application 3</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="contains-sub-menu">Pages</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="#" class="contains-sub-menu">About Pages</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="about-style-one.html">About Original</a>
+										</li>
+										<li>
+											<a href="about-style-two.html">About Style 2</a>
+										</li>
+										<li>
+											<a href="about-style-three.html">About Style 3</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="contains-sub-menu">Service Pages</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="services-style-one.html">Services Original</a>
+										</li>
+										<li>
+											<a href="services-style-two.html">Services Style 2</a>
+										</li>
+										<li>
+											<a href="services-style-three.html">Services Style 3</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="contains-sub-menu">Contact Pages</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="contact-style-one.html">Contact Original</a>
+										</li>
+										<li>
+											<a href="contact-style-two.html">Contact Style 2</a>
+										</li>
+										<li>
+											<a href="contact-style-three.html">Contact Style 3</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="contains-sub-menu">Coming Soon Pages</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="coming-soon-1.html">Coming Soon Original <span class="label rounded bkg-theme color-white pull-right">New</span></a>
+										</li>
+										<li>
+											<a href="coming-soon-2.html">Coming Soon Style 2 <span class="label rounded bkg-theme color-white pull-right">New</span></a>
+										</li>
+										<li>
+											<a href="coming-soon-3.html">Coming Soon Style 3 <span class="label rounded bkg-theme color-white pull-right">New</span></a>
+										</li>
+										<li>
+											<a href="coming-soon-4.html">Coming Soon Style 3 <span class="label rounded bkg-theme color-white pull-right">New</span></a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="contains-sub-menu">Login Pages</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="index-login.html">Login Original</a>
+										</li>
+										<li>
+											<a href="index-login-2.html">Login Style 2</a>
+										</li>
+										<li>
+											<a href="index-login-3.html">Login Style 3</a>
+										</li>
+										<li>
+											<a href="index-login-4.html">Login Style 3</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="contains-sub-menu">Register Pages</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="index-register.html">Register Original</a>
+										</li>
+										<li>
+											<a href="index-register-2.html">Register Style 2</a>
+										</li>
+										<li>
+											<a href="index-register-3.html">Register Style 3</a>
+										</li>
+										<li>
+											<a href="index-register-4.html">Register Style 3</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="contains-sub-menu">Error Pages</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="404.html">404 Original</a>
+										</li>
+										<li>
+											<a href="404-2.html">404 Style 2</a>
+										</li>
+										<li>
+											<a href="404-3.html">404 Style 3</a>
+										</li>
+										<li>
+											<a href="500.html">500 Original</a>
+										</li>
+										<li>
+											<a href="500-2.html">500 Style 2</a>
+										</li>
+										<li>
+											<a href="500-3.html">500 Style 3</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="maintenance.html">Maintenance</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="contains-sub-menu">Blog</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="blog-wide.html">Blog Index Wide</a>
+								</li>
+								<li>
+									<a href="blog-grid.html">Blog Index Grid</a>
+								</li>
+								<li>
+									<a href="blog-masonry.html">Blog Index Masonry</a>
+								</li>
+								<li>
+									<a href="blog-list.html">Blog Index List</a>
+								</li>
+								<li>
+									<a href="blog-sidebar-right.html">Blog Index Sidebar Right</a>
+								</li>
+								<li>
+									<a href="blog-sidebar-left.html">Blog Index Sidebar Left</a>
+								</li>
+								<li>
+									<a href="blog-single-post.html">Single Post</a>
+								</li>
+								<li>
+									<a href="blog-single-post-sidebar-right.html">Single Post Sidebar Right</a>
+								</li>
+								<li>
+									<a href="blog-single-post-sidebar-left.html">Single Post Sidebar Left</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="contains-sub-menu">Shop</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="#" class="contains-sub-menu">Shop Layouts</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="shop-grid-two-columns.html">Shop Grid Two Columns</a>
+										</li>
+										<li>
+											<a href="shop-grid-three-columns.html">Shop Grid Three Columns</a>
+										</li>
+										<li>
+											<a href="shop-grid-four-columns.html">Shop Grid Four Columns</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="contains-sub-menu">Single Product</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="single-product-device.html">Product Device</a>
+										</li>
+										<li>
+											<a href="single-product-software.html">Product Software</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="contains-sub-menu">Cart</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="cart.html">Cart Style 1</a>
+										</li>
+										<li>
+											<a href="cart-2.html">Cart Style 2</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="contains-sub-menu">Checkout</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="checkout.html">Checkout Style 1</a>
+										</li>
+										<li>
+											<a href="checkout-2.html">Checkout Style 2</a>
+										</li>
+										<li>
+											<a href="checkout-3.html">Checkout Style 3</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="contains-sub-menu">Confirmation</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="confirmation.html">Confirmation Style 1</a>
+										</li>
+										<li>
+											<a href="confirmation-2.html">Confirmation Style 2</a>
+										</li>
+										<li>
+											<a href="confirmation-3.html">Confirmation Style 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="contains-sub-menu">Folio</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="#" class="contains-sub-menu">Fixed Width</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="portfolio-two-columns.html">2 Columns Default</a>
+										</li>
+										<li>
+											<a href="portfolio-two-columns-alt.html">2 Columns Title Below</a>
+										</li>
+										<li>
+											<a href="portfolio-two-columns-alt-2.html">2 Columns Title Over</a>
+										</li>
+										<li>
+											<a href="portfolio-three-columns.html">3 Columns Default</a>
+										</li>
+										<li>
+											<a href="portfolio-three-columns-alt.html">3 Columns Title Below</a>
+										</li>
+										<li>
+											<a href="portfolio-three-columns-alt-2.html">3 Columns Title Over</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="contains-sub-menu">Full Width</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="portfolio-three-columns-full-width.html">3 Columns Default</a>
+										</li>
+										<li>
+											<a href="portfolio-three-columns-full-width-alt.html">3 Columns Title Below</a>
+										</li>
+										<li>
+											<a href="portfolio-three-columns-full-width-alt-2.html">3 Columns Title Over</a>
+										</li>
+										<li>
+											<a href="portfolio-four-columns-masonry-full-width.html">4 Columns Masonry</a>
+										</li>
+										<li>
+											<a href="portfolio-five-columns-masonry-full-width.html">5 Columns Masonry Title Over</a>
+										</li>
+										<li>
+											<a href="portfolio-five-columns-masonry-no-margins-full-width.html">5 Columns Masonry No Margins</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="contains-sub-menu">Project Pages</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="project-style-one.html">Project Style One</a>
+										</li>
+										<li>
+											<a href="project-style-two.html">Project Style Two</a>
+										</li>
+										<li>
+											<a href="project-style-three.html">Project Style Three</a>
+										</li>
+										<li>
+											<a href="project-style-four.html">Project Style Four</a>
+										</li>
+										<li>
+											<a href="project-style-five.html">Project Style Five</a>
+										</li>
+										<li>
+											<a href="project-style-six.html">Project Style Six</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="contains-sub-menu">Elements</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="#" class="contains-sub-menu">Grid Structure</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="elements-column-structure.html">Column Structure</a>
+										</li>
+										<li>
+											<a href="elements-animation.html">Column &amp; Element Animation</a>
+										</li>
+										<li>
+											<a href="elements-sticky-columns.html">Sticky Columns</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="contains-sub-menu">Media</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="elements-lightbox.html">Lightbox</a>
+										</li>
+										<li>
+											<a href="elements-maps.html">Maps</a>
+										</li>
+										<li>
+											<a href="elements-rollovers.html">Rollovers</a>
+										</li>
+										<li>
+											<a href="elements-video.html">Video</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="contains-sub-menu">Forms</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="elements-forms.html">Contact Forms</a>
+										</li>
+										<li>
+											<a href="elements-signup-forms.html">Subscribe Forms</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="contains-sub-menu">UI</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="elements-accordions.html">Accordions</a>
+										</li>
+										<li>
+											<a href="elements-buttons.html">Buttons</a>
+										</li>
+										<li>
+											<a href="elements-icons.html">Icons</a>
+										</li>
+										<li>
+											<a href="elements-modals.html">Modals</a>
+										</li>
+										<li>
+											<a href="elements-tabs.html">Tabs</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="contains-sub-menu">Sliders</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="elements-slider.html">Full Width Slider</a>
+										</li>
+										<li>
+											<a href="elements-carousel-slider.html">Carousel Slider</a>
+										</li>
+										<li>
+											<a href="elements-logo-slider.html">Logo Slider</a>
+										</li>
+										<li>
+											<a href="elements-team-slider.html">Team Slider</a>
+										</li>
+										<li>
+											<a href="elements-testimonial-slider.html">Testimonial Slider</a>
+										</li>
+										<li>
+											<a href="elements-hero-slider.html">Hero Slider</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="contains-sub-menu">Other Elements</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="elements-testimonials.html">Testimonials</a>
+										</li>
+										<li>
+											<a href="elements-boxes.html">Boxes</a>
+										</li>
+										<li>
+											<a href="elements-color-swatches.html">Color Swatches</a>
+										</li>
+										<li>
+											<a href="elements-feature-columns.html">Feature Columns</a>
+										</li>
+										<li>
+											<a href="elements-progress-bars.html">Progress Bars</a>
+										</li>
+										<li>
+											<a href="elements-pricing-tables.html">Pricing Tables</a>
+										</li>
+										<li>
+											<a href="elements-typography.html">Typography</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="side-navigation-footer">
+					<p class="copyright no-margin-bottom">&copy; 2017 ThemeMountain.</p>
+				</div>
+			</div>
+		</div>
+	</aside>
+	<!-- Side Navigation Menu End -->
 
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com" class="underline text-gray-900 dark:text-white">Laracasts</a></div>
-                            </div>
+	<div class="wrapper reveal-side-navigation">
+		<div class="wrapper-inner">
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                                </div>
-                            </div>
-                        </div>
+			<!-- Header -->
+			<header class="header header-relative header-fixed-on-mobile nav-dark" data-bkg-threshold="100" data-sticky-threshold="0">
+				<div class="header-inner">
+					<div class="row nav-bar">
+						<div class="column width-12 nav-bar-inner">
+							<div class="logo">
+								<div class="logo-inner">
+									<a href="index.html"><img src="images/logo-dark.png" alt="Faulkner Logo" /></a>
+									<a href="index.html"><img src="images/logo.png" alt="Faulkner Logo" /></a>
+								</div>
+							</div>
+							<nav class="navigation nav-block secondary-navigation nav-right">
+								<ul>
+									<li>
+										<!-- Button -->
+										<div class="v-align-middle">
+											<a href="index-register-2.html" class="weight-semi-bold color-green">Get Started</a>
+										</div>
+									</li>
+									<li class="aux-navigation hide">
+										<!-- Aux Navigation -->
+										<a href="#" class="navigation-show side-nav-show nav-icon">
+											<span class="icon-menu"></span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+							<nav class="navigation nav-block primary-navigation nav-right sub-menu-indicator">
+								<ul>
+									<li class="current contains-sub-menu">
+										<a href="index.html">Demos</a>
+										<ul class="sub-menu">
+											<li>
+												<a href="homepage-consulting.html">Consulting</a>
+											</li>
+											<li>
+												<a href="homepage-crowdfunding.html">Crowdfunding <span class="label rounded bkg-theme color-white pull-right">New</span></a>
+											</li>
+											<li>
+												<a href="homepage-hosting.html">Hosting <span class="label rounded bkg-theme color-white pull-right">New</span></a>
+											</li>
+											<li>
+												<a href="homepage-ico.html">Initial Coin Offering <span class="label rounded bkg-theme color-white pull-right">New</span></a>
+											</li>
+											<li>
+												<a href="homepage-mobile-application.html">Mobile Application</a>
+											</li>
+											<li>
+												<a href="homepage-mobile-application-2.html">Mobile Application 2</a>
+											</li>
+											<li>
+												<a href="homepage-mobile-application-3.html">Mobile Application 3 <span class="label rounded bkg-theme color-white pull-right">New</span></a>
+											</li>
+											<li>
+												<a href="homepage-platform.html">Web Platform</a>
+											</li>
+											<li>
+												<a href="homepage-platform-2.html">Web Platform 2</a>
+											</li>
+											<li>
+												<a href="homepage-product.html">Product</a>
+											</li>
+											<li>
+												<a href="homepage-service.html">Service</a>
+											</li>
+											<li>
+												<a href="homepage-service-2.html">Service 2</a>
+											</li>
+											<li>
+												<a href="homepage-store.html">Store</a>
+											</li>
+											<li>
+												<a href="homepage-web-application.html">Web Application</a>
+											</li>
+											<li class="current">
+												<a href="homepage-web-application-2.html">Web Application 2</a>
+											</li>
+											<li>
+												<a href="homepage-web-application-3.html">Web Application 3</a>
+											</li>
+										</ul>
+									</li>
+									<li class="contains-sub-menu">
+										<a href="about-style-one.html">Featured</a>
+										<div class="sub-menu custom-content">
+											<div class="video-container">
+												<iframe src="https://player.vimeo.com/video/213961896?title=0&mp;byline=0&amp;portrait=0&amp;color=717dfb" width="500" height="281"></iframe>
+											</div>
+											<ul>
+												<li>
+													<h4>Get started</h4>
+												</li>
+												<li>
+													<a href="index.html">Overview</a>
+												</li>
+												<li>
+													<a href="homepage-mobile-application-2.html">Payment System</a>
+												</li>
+												<li>
+													<a href="about-style-one.html">About Us</a>
+												</li>
+												<li>
+													<a href="elements-pricing-tables.html">Pricing</a>
+												</li>
+											</ul>
+											<ul class="bkg-grey-ultralight">
+												<li>
+													<h4>Popular topics</h4>
+												</li>
+												<li>
+													<a href="index-register-2.html">Create Account</a>
+												</li>
+												<li>
+													<a href="project-style-two.html">Roadmap</a>
+												</li>
+												<li>
+													<a href="elements-feature-columns.html">Features</a>
+												</li>
+												<li>
+													<a href="frequently-asked-questions.html">Frequent Questions</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="contains-sub-menu">
+										<a href="about-style-one.html">Pages</a>
+										<ul class="sub-menu">
+											<li class="contains-sub-menu">
+												<a href="about-style-one.html">About</a>
+												<ul class="sub-menu">
+													<li>
+														<a href="about-style-one.html">About Original</a>
+													</li>
+													<li>
+														<a href="about-style-two.html">About Style 2</a>
+													</li>
+													<li>
+														<a href="about-style-three.html">About Style 3</a>
+													</li>
+												</ul>
+											</li>
+											<li class="contains-sub-menu">
+												<a href="services-style-one.html">Services Original</a>
+												<ul class="sub-menu">
+													<li>
+														<a href="services-style-one.html">Services Original</a>
+													</li>
+													<li>
+														<a href="services-style-two.html">Services Style 2</a>
+													</li>
+													<li>
+														<a href="services-style-three.html">Services Style 3</a>
+													</li>
+												</ul>
+											</li>
+											<li class="contains-sub-menu">
+												<a href="contact-style-one.html">Contact Original</a>
+												<ul class="sub-menu">
+													<li>
+														<a href="contact-style-one.html">Contact Original</a>
+													</li>
+													<li>
+														<a href="contact-style-two.html">Contact Style 2</a>
+													</li>
+													<li>
+														<a href="contact-style-three.html">Contact Style 3</a>
+													</li>
+												</ul>
+											</li>
+											<li class="contains-sub-menu">
+												<a href="coming-soon-1.html">Coming Soon Pages</a>
+												<ul class="sub-menu">
+													<li>
+														<a href="coming-soon-1.html">Coming Soon Original <span class="label rounded bkg-theme color-white pull-right">New</span></a>
+													</li>
+													<li>
+														<a href="coming-soon-2.html">Coming Soon Style 2 <span class="label rounded bkg-theme color-white pull-right">New</span></a>
+													</li>
+													<li>
+														<a href="coming-soon-3.html">Coming Soon Style 3 <span class="label rounded bkg-theme color-white pull-right">New</span></a>
+													</li>
+													<li>
+														<a href="coming-soon-4.html">Coming Soon Style 4 <span class="label rounded bkg-theme color-white pull-right">New</span></a>
+													</li>
+												</ul>
+											</li>
+											<li class="contains-sub-menu">
+												<a href="index-login.html">Login Pages</a>
+												<ul class="sub-menu">
+													<li>
+														<a href="index-login.html">Login Original</a>
+													</li>
+													<li>
+														<a href="index-login-2.html">Login Style 2</a>
+													</li>
+													<li>
+														<a href="index-login-3.html">Login Style 3</a>
+													</li>
+													<li>
+														<a href="index-login-4.html">Login Style 3</a>
+													</li>
+												</ul>
+											</li>
+											<li class="contains-sub-menu">
+												<a href="index-register.html">Register Pages</a>
+												<ul class="sub-menu">
+													<li>
+														<a href="index-register.html">Register Original</a>
+													</li>
+													<li>
+														<a href="index-register-2.html">Register Style 2</a>
+													</li>
+													<li>
+														<a href="index-register-3.html">Register Style 3</a>
+													</li>
+													<li>
+														<a href="index-register-4.html">Register Style 3</a>
+													</li>
+												</ul>
+											</li>
+											<li class="contains-sub-menu">
+												<a href="404.html">Error Pages</a>
+												<ul class="sub-menu">
+													<li>
+														<a href="404.html">404 Original</a>
+													</li>
+													<li>
+														<a href="404-2.html">404 Style 2</a>
+													</li>
+													<li>
+														<a href="404-3.html">404 Style 3</a>
+													</li>
+													<li>
+														<a href="500.html">500 Original</a>
+													</li>
+													<li>
+														<a href="500-2.html">500 Style 2</a>
+													</li>
+													<li>
+														<a href="500-3.html">500 Style 3</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="maintenance.html">Maintenance</a>
+											</li>
+										</ul>
+									</li>
+									<li class="contains-mega-sub-menu">
+										<a href="portfolio-three-columns.html">Folio</a>
+										<ul class="mega-sub-menu">
+											<li>
+												<a href="portfolio-three-columns.html">Fixed Width</a>
+												<ul>
+													<li>
+														<a href="portfolio-two-columns.html">2 Columns Default</a>
+													</li>
+													<li>
+														<a href="portfolio-two-columns-alt.html">2 Columns Title Below</a>
+													</li>
+													<li>
+														<a href="portfolio-two-columns-alt-2.html">2 Columns Title Over</a>
+													</li>
+													<li>
+														<a href="portfolio-three-columns.html">3 Columns Default</a>
+													</li>
+													<li>
+														<a href="portfolio-three-columns-alt.html">3 Columns Title Below</a>
+													</li>
+													<li>
+														<a href="portfolio-three-columns-alt-2.html">3 Columns Title Over</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="portfolio-three-columns-full-width.html">Full Width</a>
+												<ul>
+													<li>
+														<a href="portfolio-three-columns-full-width.html">3 Columns Default</a>
+													</li>
+													<li>
+														<a href="portfolio-three-columns-full-width-alt.html">3 Columns Title Below</a>
+													</li>
+													<li>
+														<a href="portfolio-three-columns-full-width-alt-2.html">3 Columns Title Over</a>
+													</li>
+													<li>
+														<a href="portfolio-four-columns-masonry-full-width.html">4 Columns Masonry</a>
+													</li>
+													<li>
+														<a href="portfolio-five-columns-masonry-full-width.html">5 Columns Masonry Title Over</a>
+													</li>
+													<li>
+														<a href="portfolio-five-columns-masonry-no-margins-full-width.html">5 Columns Masonry No Margins</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="project-style-one.html">Project Pages</a>
+												<ul>
+													<li>
+														<a href="project-style-one.html">Project Style One</a>
+													</li>
+													<li>
+														<a href="project-style-two.html">Project Style Two</a>
+													</li>
+													<li>
+														<a href="project-style-three.html">Project Style Three</a>
+													</li>
+													<li>
+														<a href="project-style-four.html">Project Style Four</a>
+													</li>
+													<li>
+														<a href="project-style-five.html">Project Style Five</a>
+													</li>
+													<li>
+														<a href="project-style-six.html">Project Style Six</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="contains-sub-menu">
+										<a href="blog-wide.html">Blog</a>
+										<ul class="sub-menu">
+											<li>
+												<a href="blog-wide.html">Blog Index Wide</a>
+											</li>
+											<li>
+												<a href="blog-grid.html">Blog Index Grid</a>
+											</li>
+											<li>
+												<a href="blog-masonry.html">Blog Index Masonry</a>
+											</li>
+											<li>
+												<a href="blog-list.html">Blog Index List</a>
+											</li>
+											<li>
+												<a href="blog-sidebar-right.html">Blog Index Sidebar Right</a>
+											</li>
+											<li>
+												<a href="blog-sidebar-left.html">Blog Index Sidebar Left</a>
+											</li>
+											<li>
+												<a href="blog-single-post.html">Single Post</a>
+											</li>
+											<li>
+												<a href="blog-single-post-sidebar-right.html">Single Post Sidebar Right</a>
+											</li>
+											<li>
+												<a href="blog-single-post-sidebar-left.html">Single Post Sidebar Left</a>
+											</li>
+										</ul>
+									</li>
+									<li class="contains-sub-menu sub-menu-right">
+										<a href="shop-grid-three-columns.html">Shop</a>
+										<ul class="sub-menu">
+											<li class="contains-sub-menu">
+												<a href="shop-grid-three-columns.html">Shop Layouts</a>
+												<ul class="sub-menu">
+													<li>
+														<a href="shop-grid-two-columns.html">Shop Grid Two Columns</a>
+													</li>
+													<li>
+														<a href="shop-grid-three-columns.html">Shop Grid Three Columns</a>
+													</li>
+													<li>
+														<a href="shop-grid-four-columns.html">Shop Grid Four Columns</a>
+													</li>
+												</ul>
+											</li>
+											<li class="contains-sub-menu">
+												<a href="single-product-device.html">Single Product</a>
+												<ul class="sub-menu">
+													<li>
+														<a href="single-product-device.html">Product Device</a>
+													</li>
+													<li>
+														<a href="single-product-software.html">Product Software</a>
+													</li>
+												</ul>
+											</li>
+											<li class="contains-sub-menu">
+												<a href="cart.html">Cart</a>
+												<ul class="sub-menu">
+													<li>
+														<a href="cart.html">Cart Style 1</a>
+													</li>
+													<li>
+														<a href="cart-2.html">Cart Style 2</a>
+													</li>
+												</ul>
+											</li>
+											<li class="contains-sub-menu">
+												<a href="checkout.html">Checkout</a>
+												<ul class="sub-menu">
+													<li>
+														<a href="checkout.html">Checkout Style 1</a>
+													</li>
+													<li>
+														<a href="checkout-2.html">Checkout Style 2</a>
+													</li>
+													<li>
+														<a href="checkout-3.html">Checkout Style 3</a>
+													</li>
+												</ul>
+											</li>
+											<li class="contains-sub-menu">
+												<a href="confirmation.html">Confirmation</a>
+												<ul class="sub-menu">
+													<li>
+														<a href="confirmation.html">Confirmation Style 1</a>
+													</li>
+													<li>
+														<a href="confirmation-2.html">Confirmation Style 2</a>
+													</li>
+													<li>
+														<a href="confirmation-3.html">Confirmation Style 3</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="contains-mega-sub-menu">
+										<a href="elements-accordions.html">Elements</a>
+										<ul class="mega-sub-menu">
+											<li>
+												<a href="elements-column-structure.html">Grid Structure</a>
+												<ul>
+													<li>
+														<a href="elements-column-structure.html">Column Structure</a>
+													</li>
+													<li>
+														<a href="elements-animation.html">Column &amp; Element Animation</a>
+													</li>
+													<li>
+														<a href="elements-sticky-columns.html">Sticky Columns</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="elements-lightbox.html">Media</a>
+												<ul>
+													<li>
+														<a href="elements-lightbox.html">Lightbox</a>
+													</li>
+													<li>
+														<a href="elements-maps.html">Maps</a>
+													</li>
+													<li>
+														<a href="elements-rollovers.html">Rollovers</a>
+													</li>
+													<li>
+														<a href="elements-video.html">Video</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="elements-forms.html">Forms</a>
+												<ul>
+													<li>
+														<a href="elements-forms.html">Contact Forms</a>
+													</li>
+													<li>
+														<a href="elements-signup-forms.html">Subscribe Forms</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="elements-accordions.html">UI</a>
+												<ul>
+													<li>
+														<a href="elements-accordions.html">Accordions</a>
+													</li>
+													<li>
+														<a href="elements-buttons.html">Buttons</a>
+													</li>
+													<li>
+														<a href="elements-icons.html">Icons</a>
+													</li>
+													<li>
+														<a href="elements-modals.html">Modals</a>
+													</li>
+													<li>
+														<a href="elements-tabs.html">Tabs</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="elements-slider.html">Sliders</a>
+												<ul>
+													<li>
+														<a href="elements-slider.html">Full Width Slider</a>
+													</li>
+													<li>
+														<a href="elements-carousel-slider.html">Carousel Slider</a>
+													</li>
+													<li>
+														<a href="elements-logo-slider.html">Logo Slider</a>
+													</li>
+													<li>
+														<a href="elements-team-slider.html">Team Slider</a>
+													</li>
+													<li>
+														<a href="elements-testimonial-slider.html">Testimonial Slider</a>
+													</li>
+													<li>
+														<a href="elements-hero-slider.html">Hero Slider</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="elements-testimonials.html">Other Elements</a>
+												<ul>
+													<li>
+														<a href="elements-testimonials.html">Testimonials</a>
+													</li>
+													<li>
+														<a href="elements-boxes.html">Boxes</a>
+													</li>
+													<li>
+														<a href="elements-color-swatches.html">Color Swatches</a>
+													</li>
+													<li>
+														<a href="elements-feature-columns.html">Feature Columns</a>
+													</li>
+													<li>
+														<a href="elements-progress-bars.html">Progress Bars</a>
+													</li>
+													<li>
+														<a href="elements-pricing-tables.html">Pricing Tables</a>
+													</li>
+													<li>
+														<a href="elements-typography.html">Typography</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- Header End -->
 
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/" class="underline text-gray-900 dark:text-white">Laravel News</a></div>
-                            </div>
+			<!-- Content -->
+			<div class="content clearfix">
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                                </div>
-                            </div>
-                        </div>
+				<!-- Intro Section -->
+				<div class="section-block window-height bkg-pink fullscreen-pattern-1">
+					<div class="media-overlay bkg-gradient-royal-garden opacity-04"></div>
+					<div class="row flex v-align-middle">
+						<div class="column width-10 push-1 center">
+							<h1 class="color-white">Faulkner Moka API</h1>
+							<div class="row">
+								<div class="column width-6 offset-3">
+									<p class="lead color-white">Create something beautiful for your users with Faulkner's APIs and web tools.</p>
+									<a href="#documentation" class="scroll-link button rounded medium bkg-white bkg-hover-white color-charcoal color-hover-charcoal-light shadow-hover left mb-80">
+										<span class="icon-documents left"></span>
+										<span>Discover Our Documentation</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Intro Section End -->
 
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</div>
-                            </div>
+				<!-- Twitter Section -->
+				<div class="section-block pb-50 bkg-white">
+					<div class="row">
+						<div class="column width-6 offset-3 center v-align-middle">
+							<div>
+								<h2 class="mb-30">What People Are Saying</h2>
+								<p class="lead mb-60">With over ten million platform and services actively using our API, Faulkner has become an industry leader.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row flex boxes one-column-on-tablet">
+						<div class="column width-4">
+							<div class="box large rounded bkg-white border-grey-light horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:0ms;">
+								<div>
+									<div class="thumbnail circle mb-10">
+										<img src="images/team/team-member-1-square.jpg" width="40" alt="">
+									</div>
+									<a href="#" class="pull-right mt-10"><span>@KayneAndersson</span> <span class="icon-twitter small"></span></a>
+								</div>
+								<p>So in love with Faulkner it's crazy. I built my client's site in a matter or minutes. Just incredible!</p>
+							</div>
+						</div>
+						<div class="column width-4">
+							<div class="box large rounded bkg-white border-grey-light horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:300ms;">
+								<div>
+									<div class="thumbnail circle mb-10">
+										<img src="images/team/team-member-2-square.jpg" width="40" alt="">
+									</div>
+									<a href="#" class="pull-right mt-10"><span>@johnydoes</span> <span class="icon-twitter small"></span></a>
+								</div>
+								<p>Every so often a new API comes out. At first you are heistant, but then after trying it you're just in awe. Amazing tools!</p>
+							</div>
+						</div>
+						<div class="column width-4">
+							<div class="box large rounded bkg-white border-grey-light horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:150ms;">
+								<div>
+									<div class="thumbnail circle mb-10">
+										<img src="images/team/team-member-3-square.jpg" width="40" alt="">
+									</div>
+									<a href="#" class="pull-right mt-10"><span>@johnydoes</span> <span class="icon-twitter small"></span></a>
+								</div>
+								<p>Love the Faulkner APIs because of the vartiety and simplicity. A well constructed tookit for people beginning to code.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Twitter Section End -->
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+				<!-- Logo Section 3 -->
+				<div class="section-block logos-4 pt-0 pb-80 bkg-white">
+					<div class="row">
+						<div class="column width-10 offset-1 center">
+							<h4 class="mb-50">Some Great People Support Us:</h4>
+							<div class="row content-grid-5 opacity-05">
+								<div class="grid-item">
+									<a href="#">
+										<img src="images/logos/froogle-logo-grid-grey.svg" alt=""/>
+									</a>
+								</div>
+								<div class="grid-item">
+									<a href="#">
+										<img src="images/logos/squidbit-logo-grid-grey.svg" alt=""/>
+									</a>
+								</div>
+								<div class="grid-item">
+									<a href="#">
+										<img src="images/logos/achillian-logo-grid-grey.svg" alt=""/>
+									</a>
+								</div>
+								<div class="grid-item">
+									<a href="#">
+										<img src="images/logos/dropfile-logo-grid-grey.svg" alt=""/>
+									</a>
+								</div>
+								<div class="grid-item">
+									<a href="#">
+										<img src="images/logos/berry-logo-grid-grey.svg" alt=""/>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Logo Section 3 End -->
 
-                <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
-                    <div class="text-center text-sm text-gray-500 sm:text-left">
-                        <div class="flex items-center">
-                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
-                                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                            </svg>
+				<!-- Article Section -->
+				<div id="documentation" class="section-block replicable-content bkg-grey-ultralight">
+					<div class="row flex">
+						<div class="column width-6 v-align-middle">
+							<div>
+								<h2 class="mb-30">Extensive Documentation</h2>
+								<p class="lead mb-60">We've made sure carefully document every aspect of the Faulkner APIs. Below are a few topics to help you get started.</p>
+							</div>
+						</div>
+						<div class="column width-6 right left-on-mobile v-align-bottom">
+							<div>
+								<a class="button rounded small bkg-pink bkg-hover-white color-white color-hover-pink mb-60">View All Articles</a>
+							</div>
+						</div>
+					</div>
+					<div class="row flex boxes two-columns-on-tablet">
+						<div class="column width-3">
+							<div class="box large rounded bkg-white horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:0ms;">
+								<h4 class="mb-80 mb-mobile-40">The Fundamentals of Faulkner</h4>
+								<p><a href="#">View article &rarr;</a></p>
+							</div>
+						</div>
+						<div class="column width-3">
+							<div class="box large rounded bkg-white horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:150ms;">
+								<h4 class="mb-80 mb-mobile-40">A Simple Way to Integrate</h4>
+								<p><a href="#">View article &rarr;</a></p>
+							</div>
+						</div>
+						<div class="column width-3">
+							<div class="box large rounded bkg-white horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:300ms;">
+								<h4 class="mb-80 mb-mobile-40">Authorization using the OAuth 2.0 protocol</h4>
+								<p><a href="#">View article &rarr;</a></p>
+							</div>
+						</div>
+						<div class="column width-3">
+							<div class="box large rounded bkg-white horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:450ms;">
+								<h4 class="mb-80 mb-mobile-40">Intro to Platform-as-a-service (PaaS)</h4>
+								<p><a href="#">View article &rarr;</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Article Section End -->
 
-                            <a href="https://laravel.bigcartel.com" class="ml-1 underline">
-                                Shop
-                            </a>
+				<!-- API Example Section -->
+				<div class="section-block bkg-ash">
+					<div class="row flex">
+						<div class="column width-6 v-align-middle">
+							<div>
+								<h2 class="mb-40 color-white">Example Integration</h2>
+								<p class="mb-mobile-40 color-white">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<ul class="list-unstyled color-white">
+									<li><span class="icon-check"></span> Simple integration</li>
+									<li><span class="icon-check"></span> 50+ ready-to-use APIs</li>
+									<li><span class="icon-check"></span> Free support</li>
+								</ul>
+								<a class="button rounded small bkg-pink bkg-hover-white color-white color-hover-pink mb-60">Get Help with Implementation</a>
+							</div>
+						</div>
+						<div class="column width-6">
+							<div class="box js-fiddle rounded xlarge bkg-white shadow horizon" data-animate-in="preset:scaleIn;duration:300ms;delay:150ms;">
+								<iframe height="300" src="https://jsfiddle.net/ThemeMountain/p3gkkmka/13/embedded/js/?bodyColor=fff&menuColor=f5f7f9&fontColor=666&accentColor=f44c67"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- API Example Section End -->
 
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
-                                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                            </svg>
+				<!-- Pricing Options -->
+				<div class="section-block bkg-white">
+					<div class="row flex boxes one-column-on-tablet">
+						<div class="column width-5 v-align-middle">
+							<div class="box rounded xlarge bkg-pink color-white">
+								<div>
+									<h2 class="mb-40">Affordable Prices for Small Businesses.</h2>
+									<p class="mb-mobile-40">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+							</div>
+						</div>
+						<div class="column width-7">
+							<div class="box rounded">
+								<div class="pricing-table rounded xlarge style-2 columns-2 mb-0 border-white">
+									<div class="pricing-table-column">
+										<div class="pricing-table-header">
+											<h2 class="weight-semi-bold">Discovery</h2>
+										</div>
+										<div class="pricing-table-price">
+											<h4>
+												<span class="currency">$</span>1.95
+												<span class="interval mt-10">/per month</span>
+											</h4>
+											<hr>
+										</div>
+										<div class="pricing-table-text">
+											<p>For startups with less than 5 applications per month. Upgrade to Pinoneer at any time.</p>
+										</div>
+										<div class="pricing-table-footer">
+											<a href="#" class="button rounded border-pink bkg-hover-pink color-pink color-hover-white shadow-hover mb-mobile-40">Select Option</a>
+										</div>
+									</div>
+									<div class="pricing-table-column">
+										<div class="pricing-table-header">
+											<h2 class="weight-semi-bold">Pioneer</h2>
+										</div>
+										<div class="pricing-table-price">
+											<h4>
+												<span class="currency">$</span>3.95
+												<span class="interval mt-10">/per month</span>
+											</h4>
+											<hr>
+										</div>
+										<div class="pricing-table-text">
+											<p>For growing mid-size to large companies with 100+ applications per month.</p>
+										</div>
+										<div class="pricing-table-footer">
+											<a href="#" class="button rounded border-pink bkg-hover-pink color-pink color-hover-white shadow-hover mb-mobile-40">Select Option</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Pricing Options End -->
 
-                            <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
-                                Sponsor
-                            </a>
-                        </div>
-                    </div>
+				<!-- Custom Call to Action Section -->
+				<div class="section-block pt-60 pb-60 bkg-ash">
+					<div class="row flex">
+						<div class="column width-8 left v-align-middle horizon" data-animate-in="preset:slideInLeftShort;duration:1000ms;delay:0;" data-threshold="1">
+							<p class="lead mb-mobile-20 color-white">Enhance your application by using Faulkner's API and web tools today!</p>
+						</div>
+						<div class="column width-4 right v-align-middle horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;delay:300;" data-threshold="1">
+							<div>
+								<a href="https://player.vimeo.com/video/118640180?autoplay=1" class="button rounded medium border-white color-white bkg-hover-white color-hover-pink no-margins lightbox-link">Create an Account</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Custom Call to Action Section End -->
 
-                    <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
+			</div>
+			<!-- Content End -->
+
+			<!-- Footer -->
+			<footer class="footer footer-light with-border">
+				<div class="footer-top">
+					<div class="row">
+						<div class="column width-6 push-6">
+							<div class="widget right left-on-mobile">
+								<div class="footer-logo">
+									<a href="index.html"><img src="images/logo-dark.png" alt="Faulkner Logo" /></a>
+								</div>
+								<p class="mb-0">&copy; ThemeMountain. All Rights Reserved.</p>
+							</div>
+						</div>
+						<div class="column width-6 pull-6">
+							<div class="row flex two-columns-on-tablet">
+								<div class="column width-4">
+									<div class="widget">
+										<h3 class="widget-title mb-30">Product</h3>
+										<ul>
+											<li><a href="#">About us</a></li>
+											<li><a href="#">Careers</a></li>
+											<li><a href="#">Press</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="column width-4">
+									<div class="widget">
+										<h3 class="widget-title mb-30">Company</h3>
+										<ul>
+											<li><a href="#">Overview</a></li>
+											<li><a href="#">Features</a></li>
+											<li><a href="#">Pricing</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="column width-4">
+									<div class="widget">
+										<h3 class="widget-title mb-30">Resources</h3>
+										<ul>
+											<li><a href="#">News</a></li>
+											<li><a href="#">Documentation</a></li>
+											<li><a href="#">Faq</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- Footer End -->
+
+		</div>
+	</div>
+
+	<!-- Js -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3JCAhNj6tVAO_LSb8M-AzMlidiT-RPAs"></script>
+	<script src="js/timber.master.min.js"></script>
+</body>
 </html>
