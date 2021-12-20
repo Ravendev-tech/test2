@@ -15,7 +15,7 @@ class FrontController extends Controller
 
         $mobileResult = $agent->isMobile();
         if ($mobileResult) {
-          return view('homemovile');
+          return view('homedesk');
         }
 
         $desktopResult= $agent->isDesktop();
@@ -25,12 +25,12 @@ class FrontController extends Controller
 
         $tabletResult= $agent->isTablet();
         if ($tabletResult) {
-          return view('homemovile');
+          return view('homedesk');
         }
 
         $tabletResult= $agent->isPhone();
         if ($tabletResult) {
-          return view('homemovile');
+          return view('homedesk');
         }
 
 
