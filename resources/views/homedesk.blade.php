@@ -16,6 +16,8 @@
 	@endif
 
 	@if((new \Jenssegers\Agent\Agent())->isMobile())
+	<link rel="stylesheet" href="css/core.min.css" />
+	<link rel="stylesheet" href="css/skin.css" />
 	@endif
 
 	@if((new \Jenssegers\Agent\Agent())->isTablet())
@@ -1377,6 +1379,10 @@
 
 	#Mobile
 	@if((new \Jenssegers\Agent\Agent())->isMobile())
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CHind+Madurai:400,500&amp;subset=latin-ext" rel="stylesheet">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3JCAhNj6tVAO_LSb8M-AzMlidiT-RPAs"></script>
+	<script src="js/timber.master.min.js"></script>
 	@endif
 
 	#Tablet
