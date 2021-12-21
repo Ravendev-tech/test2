@@ -11,42 +11,9 @@ class FrontController extends Controller
 
     public function detuctDebice()
     {
-        $agent = new Agent;
-
-        $mobileResult = $agent->isMobile();
-        if ($mobileResult) {
-          $valor = 1;
-          return view('homedesk',compact(
-            'valor'
-          ));
-        }
-
-        $desktopResult= $agent->isDesktop();
-        if ($desktopResult) {
-          $valor = 2;
-          return view('homedesk',compact(
-            'valor'
-          ));
-        }
-
-        $tabletResult= $agent->isTablet();
-        if ($tabletResult) {
-          $valor = 3;
-          return view('homedesk',compact(
-            'valor'
-          ));
-        }
-
-        $tabletResult= $agent->isPhone();
-        if ($tabletResult) {
-          $valor = 4;
-          return view('homedesk',compact(
-            'valor'
-          ));
-        }
+          return view('homedesk');
 
     }
-
 
     /**
      * Display a listing of the resource.

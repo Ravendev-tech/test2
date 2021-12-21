@@ -10,20 +10,16 @@
 	<title>Faulkner | Multipurpose HTML5 Template - Mobile Application</title>
 	<link rel="shortcut icon" type="image/x-icon" href="images/theme-mountain-favicon.ico">
 
-	@if($valor == 2)
-
-	<!-- Font -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CHind+Madurai:400,500&amp;subset=latin-ext" rel="stylesheet">
-
-	<!-- Css -->
-	<link rel="stylesheet" href="css/core.min.css" />
-	<link rel="stylesheet" href="css/skin.css" />
-	@else
+	@if((new \Jenssegers\Agent\Agent())->isDesktop())
+		<link rel="stylesheet" href="css/core.min.css" />
+		<link rel="stylesheet" href="css/skin.css" />
 	@endif
-	<!--[if lt IE 9]>
-    	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
 
+	@if((new \Jenssegers\Agent\Agent())->isMobile())
+	@endif
+
+	@if((new \Jenssegers\Agent\Agent())->isTablet())
+	@endif
 </head>
 <body class="shop home-page">
 
@@ -1372,12 +1368,19 @@
 
 		</div>
 	</div>
-	@if($valor == 2)
-	<!-- Js -->
+	@if((new \Jenssegers\Agent\Agent())->isDesktop())
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CHind+Madurai:400,500&amp;subset=latin-ext" rel="stylesheet">
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3JCAhNj6tVAO_LSb8M-AzMlidiT-RPAs"></script>
 	<script src="js/timber.master.min.js"></script>
-	@else
+	@endif
+
+	#Mobile
+	@if((new \Jenssegers\Agent\Agent())->isMobile())
+	@endif
+
+	#Tablet
+	@if((new \Jenssegers\Agent\Agent())->isTablet())
 	@endif
 </body>
 </html>
