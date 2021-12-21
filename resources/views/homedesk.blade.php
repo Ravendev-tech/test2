@@ -1374,7 +1374,6 @@
 	<script src="js/timber.master.min.js"></script>
 	@endif
 
-	#Mobile
 	@if((new \Jenssegers\Agent\Agent())->isMobile())
 	<link rel="stylesheet" href="css/core.min.css" />
 	<link rel="stylesheet" href="css/skin.css" />
@@ -1383,7 +1382,6 @@
 	<script src="js/timber.master.min.js"></script>
 	@endif
 
-	#Tablet
 	@if((new \Jenssegers\Agent\Agent())->isTablet())
 	@endif
 </body>
